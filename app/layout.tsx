@@ -21,7 +21,7 @@ export default function RootLayout({
           <div className="w-72">
             <SideBar />
           </div>
-          <div className="w-full h-screen p-3">
+          <div className="w-full h-screen">
             <Container>
               {children}
               <BasketButton/>
