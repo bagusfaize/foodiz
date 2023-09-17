@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import SideBar from './components/SideBar'
+import Container from './components/Container'
+import BasketButton from './components/BasketButton'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="flex h-screen">
+          <div className="w-72">
+            <SideBar />
+          </div>
+          <div className="w-full h-screen p-3">
+            <Container>
+              {children}
+              <BasketButton/>
+            </Container>
+          </div>
+      </body>
     </html>
   )
 }
