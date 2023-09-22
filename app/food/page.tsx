@@ -4,42 +4,57 @@ import { IoIosAdd } from 'react-icons/io';
 const foods = [
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
   {
     title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce from West Java, Indonesia.",
+    desc: "Raw vegetable salad in peanut sauce.",
+    imgSrc: "/images/food-1.png"
+  },
+  {
+    title:"Karedok",
+    desc: "Raw vegetable salad in peanut sauce.",
+    imgSrc: "/images/food-1.png"
+  },
+  {
+    title:"Karedok",
+    desc: "Raw vegetable salad in peanut sauce.",
+    imgSrc: "/images/food-1.png"
+  },
+  {
+    title:"Karedok",
+    desc: "Raw vegetable salad in peanut sauce.",
     imgSrc: "/images/food-1.png"
   },
 ]
@@ -51,9 +66,11 @@ export default function Food() {
         <div className="grid grid-cols-12 gap-x-3 gap-y-7">
           {foods.map(item => (
             <div className="bg-white p-5 rounded-2xl col-span-3 w-48 shadow-sm" key={item.title}>
-              <div><Image src={item.imgSrc} alt="food-img" width={100} height={100}/></div>
+              <div className="flex justify-center">
+                <Image src={item.imgSrc} alt="food-img" width={100} height={100}/>
+              </div>
               <div>
-                <div className="text-sm font-semibold">{item.title}</div>
+                <div className="font-semibold">{item.title}</div>
                 <div className="text-sm text-gray-500">{item.desc}</div>
               </div>
               <div className="flex justify-between mt-2 items-end">

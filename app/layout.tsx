@@ -21,7 +21,7 @@ export default function RootLayout({
           <div className="w-72">
             <SideBar />
           </div>
-          <div className="w-full h-screen">
+          <div className="w-full min-h-screen overflow-y-auto">
             <Container>
               {children}
               <BasketButton/>
