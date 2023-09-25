@@ -17,7 +17,7 @@ const config: Config = {
         "main-red": "#F45050",
         "light-grey": "#F0F0F0",
         "dark-grey": "#3C486B",
-        "main-yellow": "#F9D949"
+        "main-yellow": "#FAA21B"
       }
     },
   },
