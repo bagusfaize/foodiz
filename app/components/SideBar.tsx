@@ -44,7 +44,7 @@ export default function SideBar() {
                     return (
                         <Link
                             href={item.path}
-                            className={`flex items-center px-5 py-4 rounded-xl ${isActive ? "bg-main-red text-white" : "text-dark-grey hover:bg-light-grey"}`}
+                            className={`flex items-center px-5 py-4 rounded-xl ${isActive ? "bg-main-yellow text-white" : "text-dark-grey hover:bg-light-grey"}`}
                         >
                             <span className="mr-3 text-lg">
                                 {item.icon}

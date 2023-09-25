@@ -71,7 +71,7 @@ export default function Food() {
               </div>
               <div>
                 <div className="font-semibold">{item.title}</div>
-                <div className="text-sm text-gray-500">{item.desc}</div>
+                <div className="text-sm text-gray-400">{item.desc}</div>
               </div>
               <div className="flex justify-between mt-2 items-end">
                 <span className="font-semibold">Rp 20k</span>
