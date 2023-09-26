@@ -1,9 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import SideBar from './components/SideBar'
+import Header from './components/Header'
 import Container from './components/Container'
-import BasketButton from './components/BasketButton'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,13 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex h-screen">
-          <div className="w-72">
-            <SideBar />
-          </div>
-          <div className="w-full min-h-screen overflow-y-auto">
+          <div className="w-full min-h-screen overflow-y-auto bg-zinc-50">
+            <Header />
             <Container>
               {children}
-              <BasketButton/>
+            </Container>
+          </div>
+          <div className="w-[500px] bg-zinc-50">
+            <Container>
+              <h1>My Order</h1>
             </Container>
           </div>
       </body>

@@ -1,70 +1,12 @@
 import Image from "next/image";
 import { IoIosAdd } from 'react-icons/io';
 
-const foods = [
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-  {
-    title:"Karedok",
-    desc: "Raw vegetable salad in peanut sauce.",
-    imgSrc: "/images/food-1.png"
-  },
-]
-
 export default function Food() {
     return (
       <main className="p-5">
         <h1 className="text-3xl font-semibold mb-5">All Foods</h1>
         <div className="grid grid-cols-12 gap-x-3 gap-y-7">
-          {foods.map(item => (
+          {/* {foods.map(item => (
             <div className="bg-white p-5 rounded-2xl col-span-3 w-48 shadow-sm" key={item.title}>
               <div className="flex justify-center">
                 <Image src={item.imgSrc} alt="food-img" width={100} height={100}/>
@@ -80,7 +22,7 @@ export default function Food() {
                 </span>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </main>
     )

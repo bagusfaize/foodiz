@@ -6,7 +6,7 @@ export default function Container({
     children: React.ReactNode
   }) {
   return (
-    <div className="bg-light-grey w-full p-5">
+    <div className="w-full p-5">
         {children}
     </div>
   )
