@@ -20,7 +20,7 @@ export default function Chart() {
                     <span className="text-lg">Total</span>
                     <span className="text-xl font-semibold">Rp 500k</span>
                 </div>
-                <button className="flex justify-center items-center text-white bg-main-yellow font-medium rounded-lg px-5 py-2.5 w-full">
+                <button className="flex justify-center items-center text-white bg-main-yellow font-medium rounded-full px-5 py-2.5 w-full ">
                     Checkout
                     <FiChevronRight/>
                 </button>

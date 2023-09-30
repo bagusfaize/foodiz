@@ -4,7 +4,7 @@ import { FiTrash2 } from 'react-icons/fi'
 
 export default function ChartCard() {
   return (
-    <div className="flex items-center mb-4">
+    <div className="flex items-center mb-5">
         <div className="mr-2 bg-zinc-100 rounded-xl">
             <Image src="/images/food-1.png" alt="cart-food-img" height={100} width={100} />
         </div>
