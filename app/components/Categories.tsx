@@ -3,7 +3,7 @@ import { PiBowlFoodBold, PiThumbsUpBold, PiBeerSteinBold, PiCakeBold, PiPercentB
 
 const menus = [
   {
-      name: "Best Seller",
+      name: "Popular",
       path: "/",
       icon: <PiThumbsUpBold />
   },
@@ -31,13 +31,13 @@ const menus = [
 
 export default function MenuCategories(){
     return(
-      <div className="flex space-x-2">
+      <div className="flex space-x-5">
         { menus.map(item => {
-          const isActive = item.name.includes('Best');
+          const isActive = item.name.includes('Popular');
           return(
           <div className={`
-            flex items-center space-x-2 rounded-lg py-2 px-4 w-36 cursor-pointer
-            ${isActive ? "bg-main-yellow text-white" : "hover:bg-zinc-200"}
+            flex items-center space-x-2 rounded-full py-3 px-5 cursor-pointer
+            ${isActive ? "bg-main-yellow text-white" : "text-zinc-600 hover:bg-zinc-200 bg-white"}
             `}
           >
             <span>{item.icon}</span>
