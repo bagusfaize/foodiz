@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Header from './components/Header'
 import Container from './components/Container'
+import Chart from './components/Chart'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,20 +14,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const isOpen = true;
   return (
     <html lang="en">
-      <body className="flex h-screen">
-          <div className="w-full min-h-screen overflow-y-auto bg-zinc-50">
+      <body className="flex">
+          <div className={`h-screen overflow-auto bg-zinc-100 ${isOpen ? "w-full" : "w-screen" } transition-transform duration-300 ease-in-out`}>
             <Header />
             <Container>
               {children}
             </Container>
           </div>
-          <div className="w-[500px] bg-zinc-50">
-            <Container>
-              <h1>My Order</h1>
-            </Container>
+          { isOpen &&
+          <div className={`w-[450px] h-screen`}>
+            <Chart />
           </div>
+          }
       </body>
     </html>
   )
