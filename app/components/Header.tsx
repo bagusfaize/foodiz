@@ -1,11 +1,15 @@
 'use client'
 import React from 'react';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import { PiForkKnifeDuotone } from 'react-icons/pi';
 import {FiShoppingBag} from 'react-icons/fi'
 
-export default function Header() {
+type HeaderProps = {
+    // isCartOpen: boolean,
+    onClick: () => void,
+}
+
+export default function Header({onClick}: HeaderProps) {
     const pathname = usePathname();
     return (
     <nav className="flex justify-between items-center bg-white px-5 sticky top-0 z-50">
@@ -16,7 +20,7 @@ export default function Header() {
                 <span className="text-zinc-700">foodiz</span>
             </div>
             <div 
-                // onClick={() => onClick()}
+                onClick={() => onClick()}
                 className="relative flex justify-center items-center h-9 w-9 rounded-full text-zinc-500 bg-zinc-100 hover:bg-zinc-200 cursor-pointer">
                 <span className="absolute h-3 w-3 bg-main-red text-white rounded-full flex justify-center items-center top-0 right-0 font-semibold text-xs border border-white"></span>
                 <FiShoppingBag className="text-xl" />

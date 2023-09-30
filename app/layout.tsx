@@ -1,8 +1,10 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import Header from './components/Header'
 import Container from './components/Container'
 import Chart from './components/Chart'
+import { useViewCart } from './hooks/useViewCart'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,17 +16,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const isOpen = true;
+  
+  const { isCartOpen, toggleCart } = useViewCart();
+
   return (
     <html lang="en">
       <body className="flex">
-          <div className={`h-screen overflow-auto bg-zinc-100 ${isOpen ? "w-full" : "w-screen" } transition-transform duration-300 ease-in-out`}>
-            <Header />
+          <div className={`h-screen overflow-auto bg-zinc-100 ${isCartOpen ? "w-full" : "w-screen" } transition-transform duration-300 ease-in-out`}>
+            <Header onClick={toggleCart}/>
             <Container>
               {children}
             </Container>
           </div>
-          { isOpen &&
+          { isCartOpen &&
           <div className={`w-[450px] h-screen`}>
             <Chart />
           </div>
