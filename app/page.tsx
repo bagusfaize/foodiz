@@ -3,6 +3,7 @@ import MenuCategories from "./components/Categories";
 import Hero from "./components/Hero";
 import { foods } from "./constant/constant";
 import { IoIosAdd } from "react-icons/io";
+import { AiFillFire } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-x-3 gap-y-7">
           {foods.map(item => (
             <div className="bg-white p-5 rounded-2xl col-span-3 w-48 shadow-sm" key={item.title}>
-              <div className="flex justify-center">
+              <div className="flex justify-center relative">
+                <span className="absolute right-0 w-6 h-6 bg-red-100 flex justify-center items-center rounded-full">
+                  <AiFillFire className="text-red-500"/>
+                </span>
                 <Image src={item.imgSrc} alt="food-img" width={100} height={100}/>
               </div>
               <div>
