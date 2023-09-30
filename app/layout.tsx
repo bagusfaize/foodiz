@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Header from './components/Header'
 import Container from './components/Container'
-import Chart from './components/Chart'
+import Cart from './components/Cart'
 import { useViewCart } from './hooks/useViewCart'
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
           </div>
           { isCartOpen &&
           <div className={`w-[450px] h-screen`}>
-            <Chart />
+            <Cart />
           </div>
           }
       </body>

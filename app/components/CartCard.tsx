@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { FiTrash2 } from 'react-icons/fi'
 
-export default function ChartCard() {
+export default function CartCard() {
   return (
     <div className="flex items-center mb-5">
         <div className="mr-2 bg-zinc-100 rounded-xl">

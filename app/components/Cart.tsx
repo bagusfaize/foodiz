@@ -1,18 +1,18 @@
 import React from 'react'
-import ChartCard from './ChartCard'
+import CartCard from './CartCard'
 import { FiChevronRight } from 'react-icons/fi'
 
-export default function Chart() {
+export default function Cart() {
     return (
         <div className="w-full h-full flex flex-col justify-between bg-white p-5 relative overflow-y-auto">
             <div>
                 <h1 className="text-xl mb-5 font-semibold">My Order</h1>
                 <div>
-                    <ChartCard />
-                    <ChartCard />
-                    <ChartCard />
-                    <ChartCard />
-                    <ChartCard />
+                    <CartCard />
+                    <CartCard />
+                    <CartCard />
+                    <CartCard />
+                    <CartCard />
                 </div>
             </div>
             <div>
